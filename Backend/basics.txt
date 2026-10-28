@@ -1,0 +1,122 @@
+Node Js => It is a javascript runtime environment 
+It is used for server side programming
+
+Node jS is not a language, library or framework
+
+node -v => to check the node installed or not 
+
+global object => exist in node environment 
+
+.help => command to get basic command
+
+.exit to exit
+
+Process => This object provides information about and control over the current node.js Process
+
+process.version
+
+process.release
+
+process.cwd();
+
+
+process.argv => returns an array contaning the command line argument passed when the node.js process was launched
+
+module.exports => requiring files
+
+require() a built function to import external modules that exists in seprate files
+
+module.exports => a special object, it returns a empty object if not value passed
+
+NPM => npm is a standard package manager for Node.js
+
+1=> Library of packages
+2=> command line tool
+
+
+node_modules => The node_modules folder contains every installed dependancies for your project
+
+project-lock-json => It records the exact version every installed dependancies and their versions
+
+package.json => The package.json file contains descriptive and functional metadata about a project such as name , versions, and dependencies
+
+To install package globally
+
+command to provide admin access before=> sudo chown  -R $USER /usr/local/lib/node_modules
+
+
+npm install -g packagename => to install package globally
+
+npm install packagename => to link package
+
+require vs import
+
+import {sum} from "./math.js"
+
+we can't selectively load only the pieces we need with require but with import , 
+we ca selectively load only the pieces we need , which ca save memory.
+
+Loading is 'synchonorous' for require but can be asynchonorous for 'import'
+
+we have to export the function we have to import, and also have to define type = module in package.json file
+
+Library => It is a collection of pre written code that can be used to perform a specific tasks
+
+Eg:= Axios
+
+Framework => A framework is a set of pre written code that provides a structure for developing software applications
+
+Eg=> Express
+
+Express => A node.js web application framework that helps us to make web applications 
+
+It is used for server side programming
+
+client => request => server(backend) => response 
+
+1 => Listen for the incoming request 
+2 => Parse 
+3 => match respose with route 
+4 => response 
+
+PORTS => are the logical endpoints of a network connection that is used to exchange
+information between web server and web client
+
+Routing => It is a process of selecting a path for traffic in a network or between across multiple networks
+
+Nodemon => To automatically restarts server with code changes
+
+
+TEMPLATING
+EJS =>  (Emedded javascript templates)
+
+EJS is a simple template language that lets you generate HTML markup with plain text
+
+
+INcludes => Used to create templates inside templates(sub templates)
+
+<%- include("includes/head.ejs"); %>
+
+GET AND POST requests
+
+GET=>
+Used to GET some resposnses
+
+Data Sent in a query string (limited string data and visible in a URL)
+
+POST=> used to POST something(for create/ write / update)
+
+data send via request body (any type of data)
+ 
+Handling POST request
+
+=> Set up post request route to get some response
+
+Parse POST request data
+
+Method Overidde( It is a package used to overide post or get request in forms)
+
+method - override => it is used to convert get or post request to (patch, or Delete)
+
+
+

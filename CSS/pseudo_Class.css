@@ -1,0 +1,41 @@
+h3{
+    background-color: antiquewhite !important;
+}
+button:hover {
+    background-color:black;
+    color:white;
+}
+h3:hover{
+    text-decoration: None;
+}
+button:active{
+    color:rgb(255,0,0);
+}
+p:active{
+    font-weight:900;
+}
+/* checked pseudo class */
+input[type="radio"]:checked + label{
+    color: green;
+    font-weight: bold;
+}
+div:nth-of-type(2n){
+    background-color:tomato;
+}
+/* pseudo element */
+h1::first-letter{
+    color: blue;
+}
+p::first-line{
+    color:green;
+}
+p::selection{
+    background-color:lime;
+}
+/* cascading property */
+h3{
+    background-color: yellowgreen;
+}
+h3{
+    background-color: aquamarine;
+}

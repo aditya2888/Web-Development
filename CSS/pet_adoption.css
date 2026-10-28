@@ -1,0 +1,86 @@
+/* .card{
+    width:400px;
+    border:2px solid black;
+    border-radius:25px;
+    padding:10px;
+    margin:10px;
+}
+img{
+    width:100%;
+    border-radius:25px;
+}
+h2{
+    color: #d59f3e;
+}
+span{
+    color:#9d6f24;
+}
+h4{
+    text-align: right;
+}
+
+#pets{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+@media (max-width:375px){
+    #pets {
+        flex-wrap:wrap;
+    }
+} */
+
+
+
+
+#pets{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.card{
+    width:400px;
+    border:2px solid black;
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+}
+
+img{
+    width:100%;
+    border-radius: 25px;
+    
+}
+
+span{
+    color:#d59f3e;
+}
+
+h2{
+    color:#9d6f24;
+}
+
+
+@media (max-width:375px){
+
+    #pets{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

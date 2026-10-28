@@ -1,0 +1,51 @@
+Faker => A package of nom to generate fake data
+
+userId, username, email, password
+
+Installation
+npm i @faker-js/faker
+
+MY SQL2 Package => To connect node with MYSQL 
+
+connection.end();
+
+CLIENT => Server(backend) => SQL Database
+
+Installation
+npm i @faker-js/faker
+
+USING SQL FROM CLI(Command Line)
+
+/usr/local/mysql/bin/mysql -u root -p => this is linux command for that
+
+mysql -u root -p => First add path of bin file from program files(executable path) to use this in windows
+
+TO USE SQL2 package  FROM node.js => implementation in VS code
+
+TO USE SQL FROM CLI 
+
+Create schema.sql => File to create schema
+
+source schema.sql => to get the data from sql server
+
+
+connection.end() => to close the connection
+
+
+
+Routing with Database 
+REST
+
+GET / => Fetch and Show total number of users on our app
+
+GET /user => show user(email, id, username) ejs
+
+GET  /user/:id/edit=> To get form to edit the username , based on id. This form will require a password
+
+PATCH /user/:id   To edit username , if correct password was entenred in form
+
+
+POST => /user  => new user
+
+DELELTE => /user/id => user DELELTE
+

@@ -1,0 +1,72 @@
+OOPS(Object Oriented Programming) Concepts 
+
+To structure our code 
+
+
+Object Prototypes => Prototypes are the mechanism by which javascript object inherits features from one another
+
+It is like a single template object that all object inherit methods and properties from without having their own copy
+
+arr.__proto__(refernce)
+
+Array.prototype(actual object)
+
+String.prototype
+
+Every object in javascript have a built in property , which is called its prototype . The prototype is itself an object , so the prototype will 
+will have its own prototype , making what called a prototype chain .The chain ends when we reach a prototype that has null for its own prototype
+
+New Operator => The new operator lets developers create instance of a
+ user defined object type or of one of the built in object types 
+that has a constructor function
+
+
+// Class are template for creating objects 
+
+The constructor method is a special method of a class for creating and intializing an object isntance of that class
+
+
+REST=> Representational Transfer
+
+Rest is an architectural style that defines a set of constrains to be used for creating web services 
+
+Restful APIS
+
+We use to RESTFUL APIs to perform CRUD operations in database 
+
+CRUD(Create, Read, Update, Delete)
+
+Crud operations
+
+GET => Retrieves Resources
+
+Post => sunbmit new data to server
+
+Put => Update Existing data
+
+Patch => Update exsisting data partially
+
+DELETE => Removes data partially
+
+
+Creating RESTful APIs
+
+GET  /posts    to get data for all posts (index main route)
+
+POST /posts   to add a new post (CREATE)
+
+GET /posts/:id  to get one post(using id)
+
+PATCH /posts/:id  to update specific post 
+
+DELETE /posts/id  to delete specific post
+
+
+
+Create ID for posts 
+
+UUID package
+
+Universally unique identifier
+
+npm install uuid

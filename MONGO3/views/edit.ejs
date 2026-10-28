@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your message</title>
+</head>
+<body>
+    <h3>Edit your message of id: <%= chat.id %></h3>
+
+    <p> This chat was sent from <b><%= chat.from %> </b> to <b><%= chat.to %> </b> </p>
+
+<!-- To update the form we have to send PUT request but 
+ form only use POST or GET request, so we use a package name method overide -->
+
+    <form method="POST" action="/chats/<%= chat._id%>?_method=PUT">      
+        <textarea name="msg" rows="10" cols="50"><%= chat.msg %></textarea>
+        <button>Submit</button>
+    </form>
+
+    
+</body>
+</html>

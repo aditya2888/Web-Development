@@ -1,0 +1,257 @@
+ 
+ OUR First Database
+
+ CREATE DATABASE database_name => to create database_name
+
+ DROP DATABASE database_name => to delete database_name
+
+ USE db_name => to insert anything in tables of database , we use that before
+
+ To create tables
+
+ CREATE TABLE table_name (
+
+    column_name1 datatype constraint
+    column_name2 datatype constraint
+ );
+
+ to insert into tables
+
+ INSERT INTO student
+VALUES
+
+(101, "adam", 12);
+(102, "agman", 15);
+
+SELECT * FROM student => to see the data
+
+Database Queries 
+
+CREATE DATABASE database_name;
+
+CREATE DATABASE IF NOT EXISTS database_name;
+
+DROP DATABASE database_name;
+
+DROP DATABASE IF EXISTS database_name;
+
+SHOW DATABASES;
+
+SHOW TABLES;
+
+
+Table Queries 
+
+CREATE TABLE (schema columns)
+
+CREATE TABLE table_name(
+
+    column_name1 datatype constraint,
+    column_name2 datatype constraint,
+)
+
+Data type => TINY INT RANGE => (-127 to 128) if we write (number TINYINT UNSIGNED) => unsigned means that we give the -range of -127 to positive
+
+so the range becomes (1 to 255)
+
+Constraints => Rules for data in a table
+
+NOT NULL => Columns cannot have null VALUES
+
+UNIQUE => All value in a columns are different
+
+DEFAULT => sets the DEFAULT value of a column_name1  (Salary INT DEFAULT 25000)
+
+CHECK => It can limit the value allowed in a column  (CONSTRAINT age_check CHECK (age >= 18 AND city="Delhi"))
+
+Constraints 
+
+PRIMARY KEY => makes a column unique and not null but used only for one
+
+CREATE TABLE temp (
+
+    id INT NOT NULL,
+
+    PRIMARY KEY (id)
+);
+
+
+FOREIGN KEY => prevent that would destroy links between tables(the foreign key in one table is primary key of another table , creating the link)
+
+CREATE TABLE temp {
+
+    cust_id int,
+
+    FOREIGN KEY (teach-id) references  teacher(id)
+}
+
+
+KEYS => Keys are special column in a table 
+
+Primary key => It is a column or (set of columns) in a table that uniquely identifies each row. (a unique id )
+There is only 1 primary key and it should not be null
+
+Foreign Key => It is a column or set of columns in a table that refers to primary key in another table 
+
+Foreign Key  have duplicate or null values 
+There can be multiple foreign Keys
+
+Table Queries
+
+Insert into table
+
+INSERT INTO table_name
+(col_name1, col_name2);
+
+VALUES
+
+(col1_val1, col2_val2);
+(col1_val1, col2_val2);
+
+
+SELECT command => Select and shows data from the database
+
+Syntax 
+
+SELECT col1, col2 FROM table_name;
+
+Syntax(to show all)
+
+SELECT * FROM table_name;
+
+SELECT DISTINCT age FROM use => to get distinct(unique age)
+
+WHERE CLAUSE 
+
+To define some conditions 
+
+SELECT col1, col2, FROM table_name
+
+WHERE conditions;
+
+WHERE CLAUSE => Frequently used Operators
+
+AND => to check for both conditions to be true
+
+OR => to check for one of conditions to be TRUE 
+
+BETWEEN => Selects for a given range
+
+IN => Matches any value in the list
+
+NOT => To negate the given condition
+
+
+
+LIMIT CLAUSE => Set a Upper Limit on a number of (tuples) rows to be returned 
+
+SELECT col1, col2 FROM table_name
+
+LIMIT number
+
+ORDER BY CLAUSE => To sort in (ASC) or descending order (DESC)
+
+SELECT col1, col2, FROM table_name 
+ORDER BY col_name(to sort) ASC
+
+
+
+Agregate Functions
+
+Agregate Functions performs a calculation on a set of values , and return a sigle value 
+
+COUNT();
+MAX();
+MIN();
+SUM();
+AVG();
+
+GROUP BY CLAUSE 
+
+Group rows that have the same value into summary rows
+It collects data from multiple records and group the result by one or more column.
+
+SELECT col1, col2, 
+FROM table_name
+GROUP BY col_name(s);
+
+Generally we use GROUP BY WITH Agregate Function.
+
+HAVING CLAUSE => Similiar to WHERE ,i.e applies some condition to on rows
+But, it is used when we want to apply any condition after grouping
+
+SELECT col1, col2
+
+FROM table_name 
+
+GROUP BY col_name(s)
+HAVING condition
+
+Where is for table , HAVING is for GROUP 
+
+Grouping is necessary for HAVING
+
+
+General order
+
+FROM table_name
+
+WHERE condition
+
+GROUP BY column
+
+HAVING condition
+
+ORDER BY COLUMN ASC
+
+Table Queries => 
+
+Update (To update existing rows)
+
+UPDATE table_name 
+
+SET col1 = val1, col2 = val2 
+
+WHERE condition;
+
+
+ALter (to change the schema(or we can say column))
+
+ALTER TABLE table_name 
+
+ADD COLUMN column_name datatype constraint
+
+DROP column =>
+
+ALTER TABLE table_name
+DROP COLUMN col_name
+
+TO RENAME A TABLE
+
+ALTER TALBE table_name
+
+RENAME TO table_name
+
+TO CHANGE COLUMN IN A TABLE
+
+CHANGE Column (rename)
+
+ALTER TABLE table_name
+
+CHANGE COLUMN old_name new_name new_data_type new_constraint
+
+MODIFY COLUMN (MODIFY DATA TYPE / CONSTRAINT)
+
+ALTER TABLE table_name
+MODIFIY col_name new_datatype new_constraint
+
+
+TRUNCATE(to delete table's data)
+
+TRUNCATE TABLE table_name 
+
+
+TRUNCATE DELETE TABLE'S DATA , WHEREAS DROP DELETES TABLE COMPLETELY
+
+ 
+

@@ -1,0 +1,178 @@
+API is appication programming interface
+
+different APis => X apis, Google maps apis , instagram api , twitter apis  => to acces these
+
+api we have to make Key (access token), sign up,  return data in json format
+
+https://catfact.ninja/fact
+
+https://bored-api.appbrewery.com/random
+
+https://dog.ceo/api/breeds/image/random
+
+
+JSON => Javascript object notation , www.json.org
+
+It is in key value format similiar to objects, but its key is on string format
+
+json does not allowed value to be undefined as objects
+
+we use json validator to ckeck the format of json
+
+Generally the json data respons comes in string format.
+
+
+Terminal
+Terminal => A basic text input and output environment
+
+Command line => any interface that is used to enter any textual commands
+
+terminal => that is a type of command line
+
+console => a type of command line is used to work on your computer
+
+Shell => A program running on terminal
+
+Bash => A popular shell on Mac OS/ Linux
+Z shell => Another shell by default 
+
+
+Flags => Flags are the cjharacters that we pass with command to modify their behaviour
+
+Manual Command => 
+
+man ls => Give info about ls command
+man mkdir => give info about ls Command
+
+ls -l  => also to see other information 
+ls -a => to see the hidden folders
+ls -la to see both types
+touch => to create files or change time 
+rm => to remove files
+rmdir => to delete folder empty
+rm -rf => remove any folders (folder that is not empty)
+
+
+Git configuration
+
+git config --global user.name "My name"  or we can use local for local thing
+
+git config --global user.email "someone@gmail.com"
+
+git congig --list => to see the config changes 
+
+Access git to VScode terminal
+
+
+git clone => to clone a repository to local system
+
+git status => to check the status of the files
+
+untracked (add the file) => unmodified(edit the file) => modified(stage the file) => staged => commit 
+
+modified file ko add karo tho staged ho jayegi => add (becomes staged) =>  commit final change stamp
+
+add=> add new or changed files in your working directory to Git staging area
+
+git add . (to stage all files to be commited)
+commit => it is the record of change
+
+git commit -m  "some message"
+
+push => upload local repo content to remote repo
+
+git push origin main
+
+
+git init => to used to create a new git repo
+
+if(folder has .git files , so it is possible to to do commits or changes)
+
+
+git remote add origin https link => to add the repo orgin after creatinng the repo on github
+
+git remote -v => to check the origin(verify remote)
+
+git branch => to check current branch
+
+git branch -M main (to rename branch) 
+
+git push origin main
+
+git push -u origin main or git push --set-upstream origin main =>  
+
+It performs two things:
+
+1️⃣ Pushes code
+
+Local → GitHub
+
+2️⃣ Links branches permanently
+local main  →  origin/main
+This is called tracking (upstream).
+
+✅ After this (important)
+
+From next time you only need:
+
+git push
+
+git pull
+
+git commit -am "Added dot" => to add or commit along
+
+
+Branching
+
+git branch => to check branch
+
+git branch -M main => (to rename branch)
+
+git checkout  new branch name => to navigate branch
+
+git checkout -b new branch name => to create a new branch
+
+git branch -d branch name => (to delete branch)
+
+
+git push --set-upstream origin feature  => to set the origin before pushing feature branch
+
+git diff branch name (to compare commits, branches, files and more)
+
+git merge branch  name => (to merge two branches)
+
+Pull Request => It lets you tell others about changes you have pushed to a branch in a repository on github
+
+Pull Request merge bhi  = = commit  hota hai
+
+
+git pull origin main => used to fetch and download content form
+ a remote repo and immediately update the local repo to match that content
+
+ Merge Conflicts => An event that takes place when git is unable to automatically resolve differences in code between two commits 
+
+ Fixing Mistakes 
+
+ Case 1 : Staged changes 
+
+ git reset file name
+
+ git reset
+
+
+ Case 2: Commited changes(FOR 1 COMMIT)  
+
+ git reset HEAD~1  EK COMMIT PICHE BHEJ do
+
+
+ Case 3: commited changes (for many commits)
+
+git reset <commit hash> (hash => it is a code we can see using, git log command )
+
+git reset --hard <commit hash> 
+
+
+Forking => A fork is a new repository that shares code and visiblity settings with the original "upstream" repository 
+
+fork is a rough copy
+

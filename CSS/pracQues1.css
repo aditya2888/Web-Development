@@ -1,0 +1,27 @@
+/* h2{
+    color: orange;
+}
+p{
+    color: white;
+    background-color: black;
+}
+button{
+    color: white;
+    background-color: blue;
+} */
+
+
+
+h2{
+    color:orange;
+}
+
+button{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+p{
+    color:white;
+    background-color: black;
+}

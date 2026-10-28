@@ -1,0 +1,15 @@
+Dom represents a document with a logical tree
+It allow us to manupulate change webpage content(HTML elements)
+
+Every element in HTML/CSS code convert in object in javascript, In DOM evey node(object) is there 
+
+
+window object stores details related to window
+
+document is a object stores information related to html and CSS
+
+it nests the other objects inside it in javascript
+
+we can access it using console.dir(document), dir is a inbuilt object in javascript
+
+

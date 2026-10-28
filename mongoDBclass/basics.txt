@@ -1,0 +1,124 @@
+THe SHELL
+
+mongosh => to start SHELL
+use college => to create and update the database called college
+
+ctrl + L  => to clear screen
+
+show dbs => to show database
+
+create temporary database =  test
+
+MongoDB stores data in BSON(Binary format close cousin of json) format
+
+Document => Mongo stores data in form of documents (BSON docs)
+Collection => Mongodb stores documents in Collection
+
+Insert in DB 
+
+insertone
+
+db.collection.insertOne() => insert a single document into collection
+
+show collections
+
+db.student.insertOne( {name: "adam", marks: 79})
+
+db.student.find()  => to see the data of the student collection
+
+If the collection does not exists , mongo db creates the collection when you stores data into it first
+
+insertMany(array of documents)
+
+db.student.insertMany([{name:"adam", marks: 67},  {name: "boby" , city: "Palampur"}])
+
+db.collection.insertMany() => insert multiple documents in a collection
+
+
+FIND in DB
+
+db.collection.find() == > returns everything
+
+for specific queries
+
+db.collection.find( {key: value})  => give/returns cursor(means reference to orignal)
+
+db.collection.findOne({key: value}) => actual document
+
+
+Query Operations
+
+Find students where marks  > 75 
+
+db.student.find({marks: { $gt: 75 }} )
+
+db.student.find({marks: { $gte: 75 }} )  // greater that or equal to
+
+Find students who live in Delhi or Mumbai 
+
+db.student.find({city: {$in: ["Delhi", "Mumbai"]} })
+
+Find students who scored > 75 or live in Delhi
+
+db.student.find( {$or: [ {marks: {$gt: 75}}, {city: "Delhi"}] })
+
+Update Methods
+
+updateOne
+
+db.collections.updateOne()   => Updates atmost a single document that match a specified filter even though 
+multiple documents may match the specified filter
+
+db.collections.updateOne(<filter>, <update>, <options>)
+
+db.student.updateOne({name: "adam"}, {$set: {marks: 99}})
+
+Update Operators 
+
+$addFields
+$set
+$project
+$unset
+$replaceRoot
+$replaceWith
+
+
+db.collection.updateMany => update all documents that matches a specified filter
+
+db.collection.replaceOne() => Replace atmost a a single document that match a specified filter even though multiple documents may match 
+the specified filter
+
+
+db.student.updateOne({city: "Pune"}, {$set: {city: "Mumbai"}})  => if not existing , the city will be added , if existing it will be updated 
+
+db.student.replaceOne({name: "bob"}, {name: "Aditya", age: 21, city: "Haridwar"})  => to replace one and add also
+
+Nesting
+
+{
+    id: 
+    name: "farah",
+    performance: {marks: 88, grade: "A"}
+}
+
+to find
+
+db.student.findOne({"performance.marks": 88})  // to access the document in nesting form
+
+ DELETE IN database
+
+ db.collection.deleteOne(<filter>, <options>)
+
+ deleteMany
+
+ db.collection.deleteMany(<filter>, <options>)
+
+ db.dropDatabase()
+
+ db.student.deleteMany({}) => to delete / or empty the database
+
+
+ MOONGOSE database
+
+ 
+

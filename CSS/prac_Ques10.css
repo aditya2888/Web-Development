@@ -1,0 +1,43 @@
+/* #navbar{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    border:2px solid lightseagreen;
+    border-radius: 10px;
+    display:flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.option{
+    height:50px;
+    width: 80px;
+    font-size: 24px;
+    margin-left: 5px;
+    line-height: 50px;
+
+} */
+
+
+
+.navbar{
+
+    height:50px;
+    width:900px;
+    background-color: lightpink;
+    border:3px solid lightskyblue;
+    border-radius: 5px;
+    display:flex;
+    flex-direction:row;
+    text-align:start;
+    justify-content:flex-start;
+ 
+}
+
+
+
+.icons{
+    height:50px;
+    width:80px;
+    margin-top: 10px;
+
+}

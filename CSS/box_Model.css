@@ -1,0 +1,26 @@
+div{
+    height:200px;
+    width:500px;
+    background-color:rgb(0, 238, 255);
+    /* border-color: purple;
+    border-style: solid;
+    border-width: 5px; */
+    /* shorthand border */
+    border: 5px solid purple;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    margin: 50px;
+}
+h1{
+    border-style:dashed;
+    border-color: green;
+}
+button{
+    /* padding-left:20px;
+    padding-right:20px; */
+    /* short-hand padding */
+    /* padding:25px; */
+    padding: 0px 20px 0px 20px;
+    background-color:rgb(255, 0, 255);
+
+}

@@ -1,0 +1,12 @@
+h1{
+    color:blue;
+    background-color: rgb(39, 153, 185);
+}
+p{
+    color:red;
+    background-color: yellow;
+}
+button{
+    color:gold;
+    background-color: black;
+}

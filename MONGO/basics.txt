@@ -1,0 +1,44 @@
+Mongoose => A library that creates a connection between MongoDB and Node.js Javascript runtime environment
+
+It is an ODM(Object Data Modelling library)
+
+Installation => npm i Mongoose
+
+
+Schema defines the shape of the documents within that collection
+
+const userSchema = new mongoose.Schema({
+    name: String,
+    email: String,
+    age: Number,
+});
+
+
+Model in mongoose is a class with which we construct documents
+
+const User(model)= mongoose.model("User(collection)", userSchema)
+
+when collection is saved in mongosh database(it saved like that)
+
+User => users 
+Student => students
+Employee => employee  
+
+inside node => we can check  using( .load index.js) the user1 Object
+
+Mongoose uses Operation Buffering
+
+Mongoose lets you start using your models immediately , without waiting 
+for mongoose to establish a connection to MongoDB
+
+
+Find
+
+Model.find() // returns a QUERY Object(thennable)
+
+Mongoose Queries are not promises. But they have .then()
+
+Model.findOne() // returns a single result
+
+Model.findOneAndUpdate()  => it first find , print it and Update
+
